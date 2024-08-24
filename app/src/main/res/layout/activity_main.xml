@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título del formulario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULARIO DE REGISTRO"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo de nombre -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Selección de género -->
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"/>
+
+        <RadioButton
+            android:id="@+id/radioFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:layout_marginStart="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioOtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otro"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Selección de intereses -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tus intereses:"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxTecnologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tecnología"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDeportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deportes"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Música"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxViajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viajes"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón de registro -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
